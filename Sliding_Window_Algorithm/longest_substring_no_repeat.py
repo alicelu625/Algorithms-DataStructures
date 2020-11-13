@@ -15,9 +15,8 @@ class Solution:
             #else max length = the longer of previous max length or current substring length
             else:
                 maxLength = max(maxLength, i-head+1)
+                
             #update/add used char last seen index
-            print(head)
-            print(maxLength)
             usedChars[s[i]] = i
 
         return maxLength

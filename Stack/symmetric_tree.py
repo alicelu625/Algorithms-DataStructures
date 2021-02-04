@@ -1,12 +1,18 @@
 #From LeetCode: https://leetcode.com/problems/symmetric-tree/
 #Given a binary tree, check whether it is a mirror of itself
 #(ie, symmetric around its center).
-#Example: binary tree [1,2,2,3,4,4,3] is symmetric, [1,2,2,null,3,null,3] is not
-
-#Solution: A tree is symmetric if the left subtree is a mirror reflection of the right subtree.
-#2 trees are mirrored if the roots have same value
-#and right subtree of each tree is mirrored with left subtree of the other tree
-#Runtime: O(log n) - increases proportional to tree size
+#Example of symmetric binary tree [1,2,2,3,4,4,3]
+#     1
+#    / \
+#   2   2
+#  / \ / \
+# 3  4 4  3
+#Example of not symmetric tree [1,2,2,null,3,null,3]
+#     1
+#    / \
+#   2   2
+#    \   \
+#    3    3
 
 #Definition for a binary tree node.
 class TreeNode:
@@ -15,6 +21,10 @@ class TreeNode:
         self.left = left
         self.right = right
 
+#Solution: A tree is symmetric if the left subtree is a mirror reflection of the right subtree.
+#2 trees are mirrored if the roots have same value
+#and right subtree of each tree is mirrored with left subtree of the other tree
+#Runtime: O(log n) - increases proportional to tree size
 class Solution:
     def isSymmetric(self, root: TreeNode) -> bool:
         #if tree is empty, return true

@@ -6,6 +6,7 @@
 #Solution: A tree is symmetric if the left subtree is a mirror reflection of the right subtree.
 #2 trees are mirrored if the roots have same value
 #and right subtree of each tree is mirrored with left subtree of the other tree
+#Runtime: O(log n) - increases proportional to tree size
 
 #Definition for a binary tree node.
 class TreeNode:

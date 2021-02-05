@@ -23,6 +23,7 @@ class TreeNode:
 
 #Solution: Append level nodes to an output array and update level with
 #next level nodes (child nodes) until reaching end of tree (empty level)
+#Runtime: O(log n) - increases proportional to tree size
 class Solution:
     def levelOrder(self, root: TreeNode) -> List[List[int]]:
         #check if tree is empty

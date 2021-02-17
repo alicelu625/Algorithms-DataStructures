@@ -32,3 +32,11 @@ class Solution:
         #exits while loop when target not in nums
         #return left boundary index (adjusted at end of loop)
         return left
+
+#Runtime calculation: length of array after k iterations
+# = n/(2^k) = 1
+# n = 2^k
+# log n = log 2^k
+# log n = k log 2
+# log n = k
+#Runtime: O(log n)

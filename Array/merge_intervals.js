@@ -15,6 +15,8 @@ current interval's start with next interval's end). When it can no longer merge,
 go to the next interval and repeat until end of intervals.
 */
 
+//Runtime: O(nlogn) - sorting
+
 const merge = (intervals) => {
     //if only 1 interval, return interval
     if (intervals.length <= 1) {

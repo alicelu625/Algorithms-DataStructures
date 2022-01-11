@@ -16,7 +16,7 @@ If so, it is a match with the current number. If not, continue checking.
 
 //Runtime: O(n) - traverses through array
 
-var twoSum = function(nums, target) {
+const twoSum = (nums, target) => {
     // create map to store visited numbers
     const map = new Map();
 
